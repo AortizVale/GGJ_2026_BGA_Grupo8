@@ -13,9 +13,7 @@ public enum UIClipType
 public enum SFXType
 {
     Undefined,
-    Jump,
-    Hit,
-    Death,
+    pasos,
 }
 
 public enum MusicType
@@ -23,6 +21,7 @@ public enum MusicType
     Undefined,
     MainMenu,
     MainGameplay,
+    BackgroundMusic,
 }
 
 

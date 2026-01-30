@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MusicDatabase
   uiClips: []
   sfxClips: []
-  musicClips: []
+  musicClips:
+  - type: 3
+    clip: {fileID: 8300000, guid: 980fcd5caee900c439bdd4460be44f45, type: 3}
