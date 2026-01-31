@@ -110,14 +110,15 @@ public class PlayerCharacter: MonoBehaviour
     {
         float speed = isSprinting ? linearSpeed * sprintMultiplier : linearSpeed;
 
-        rb2D.linearVelocity = direction * speed;
+        Vector2 finalDir = ApplyIsometricWithTolerance(direction);
+
+        rb2D.linearVelocity = finalDir * speed;
 
         bool isMoving = direction.sqrMagnitude > 0.01f;
         if (isMoving)
-        {
-            lastMoveDirection = direction;
-        }
-            
+            lastMoveDirection = direction; // input crudo
+
+
         if (animator.GetBool("IsMoving") != isMoving)
         {
             animator.SetBool("IsMoving", isMoving);
@@ -187,4 +188,49 @@ public class PlayerCharacter: MonoBehaviour
         color.a = Mathf.Clamp01(alpha); // 0 = invisible, 1 = totalmente visible
         bodySpriteRenderer.color = color;
     }
+
+    [SerializeField] float isoAngle = 30f;
+
+    Vector2 ApplyIsometricWithTolerance(Vector2 input)
+    {
+        if (input.sqrMagnitude < 0.001f)
+            return Vector2.zero;
+
+        input = input.normalized;
+
+        float angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
+        if (angle < 0) angle += 360f;
+
+        const float halfTolerance = 22.5f;
+
+        // ---- Ejes puros (±22.5°) ----
+        if (angle >= 360f - halfTolerance || angle <= halfTolerance)
+            return Vector2.right;
+
+        if (angle >= 90f - halfTolerance && angle <= 90f + halfTolerance)
+            return Vector2.up;
+
+        if (angle >= 180f - halfTolerance && angle <= 180f + halfTolerance)
+            return Vector2.left;
+
+        if (angle >= 270f - halfTolerance && angle <= 270f + halfTolerance)
+            return Vector2.down;
+
+        // ---- Diagonales isométricas fijas (30° reales) ----
+        float isoAngle;
+
+        if (angle > halfTolerance && angle < 90f - halfTolerance)
+            isoAngle = 30f;          // ↗
+        else if (angle > 90f + halfTolerance && angle < 180f - halfTolerance)
+            isoAngle = 150f;         // ↖
+        else if (angle > 180f + halfTolerance && angle < 270f - halfTolerance)
+            isoAngle = 210f;         // ↙
+        else
+            isoAngle = 330f;         // ↘
+
+        float rad = isoAngle * Mathf.Deg2Rad;
+        return new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+    }
+
+
 }
