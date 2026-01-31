@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerCharacter: MonoBehaviour
@@ -9,11 +9,12 @@ public class PlayerCharacter: MonoBehaviour
     [SerializeField] InputActionReference sprint;
     bool isSprinting;
     [SerializeField] float sprintMultiplier = 1.5f;
-
+    [SerializeField] SpriteRenderer bodySpriteRenderer;
     [SerializeField] float linearSpeed = 1f;
     [Header("Interact data")]
     [SerializeField] float interactRadius = 0.3f;
     [SerializeField] float interactRange = 1f;
+
     Animator animator;
     Rigidbody2D rb2D;
 
@@ -21,6 +22,18 @@ public class PlayerCharacter: MonoBehaviour
     Vector2 rawMove;
     Vector2 interactDirection = Vector2.down;
     bool mustInteract;
+
+    public bool IsSprinting => isSprinting;
+    public bool IsMoving => rawMove.sqrMagnitude > 0.01f;
+    public float CurrentSpeedMultiplier
+    {
+        get
+        {
+            if (!IsMoving) return 0.5f;        // quieto → tiempo más lento
+            if (IsSprinting) return 4f;      // corriendo → tiempo más rápido
+            return 1f;                         // caminando → normal
+        }
+    }
 
     private void OnEnable()
     {
@@ -150,4 +163,10 @@ public class PlayerCharacter: MonoBehaviour
 
     }
 
+    public void SetBodyAlpha(float alpha) 
+    {
+        Color color = bodySpriteRenderer.color;
+        color.a = Mathf.Clamp01(alpha); // 0 = invisible, 1 = totalmente visible
+        bodySpriteRenderer.color = color;
+    }
 }
