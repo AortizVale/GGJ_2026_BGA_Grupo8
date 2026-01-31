@@ -7,10 +7,12 @@ public class PlayerCharacter: MonoBehaviour
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference interact; 
     [SerializeField] InputActionReference sprint;
+    
     bool isSprinting;
     [SerializeField] float sprintMultiplier = 1.5f;
     [SerializeField] SpriteRenderer bodySpriteRenderer;
     [SerializeField] float linearSpeed = 1f;
+    [SerializeField] Animator maskAnimator;
     [Header("Interact data")]
     [SerializeField] float interactRadius = 0.3f;
     [SerializeField] float interactRange = 1f;
@@ -78,7 +80,9 @@ public class PlayerCharacter: MonoBehaviour
         animator.SetFloat("HorizontalVelocity", lastMoveDirection.x);
         animator.SetFloat("VerticalVelocity", lastMoveDirection.y);
 
-        
+        maskAnimator.SetFloat("HorizontalVelocity", lastMoveDirection.x);
+        maskAnimator.SetFloat("VerticalVelocity", lastMoveDirection.y);
+
         if (mustInteract)
         {
             mustInteract = false;
@@ -118,6 +122,11 @@ public class PlayerCharacter: MonoBehaviour
         {
             animator.SetBool("IsMoving", isMoving);
         }
+
+        if (maskAnimator.GetBool("IsMoving") != isMoving)
+        {
+            maskAnimator.SetBool("IsMoving", isMoving);
+        }
     }
 
 
@@ -136,7 +145,6 @@ public class PlayerCharacter: MonoBehaviour
             
             if (hit.collider.gameObject != this.gameObject)
             {
-                animator.SetTrigger("Interact");
                 InteractableBase otherInteractableBase = hit.collider.GetComponent<InteractableBase>();
 
                 otherInteractableBase?.Interact();
@@ -169,6 +177,7 @@ public class PlayerCharacter: MonoBehaviour
             isSprinting = false;
         }
         animator.SetBool("IsSprinting", isSprinting);
+        maskAnimator.SetBool("IsSprinting", isSprinting);
 
     }
 
