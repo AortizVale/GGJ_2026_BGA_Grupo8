@@ -189,7 +189,7 @@ public class PlayerCharacter: MonoBehaviour
         bodySpriteRenderer.color = color;
     }
 
-    [SerializeField] float isoAngle = 30f;
+    [SerializeField] float isoReferenceAngle = 30f;
 
     Vector2 ApplyIsometricWithTolerance(Vector2 input)
     {
@@ -220,13 +220,13 @@ public class PlayerCharacter: MonoBehaviour
         float isoAngle;
 
         if (angle > halfTolerance && angle < 90f - halfTolerance)
-            isoAngle = 30f;          // ↗
+            isoAngle = isoReferenceAngle;          // ↗
         else if (angle > 90f + halfTolerance && angle < 180f - halfTolerance)
-            isoAngle = 150f;         // ↖
+            isoAngle = 180f - isoReferenceAngle;         // ↖
         else if (angle > 180f + halfTolerance && angle < 270f - halfTolerance)
-            isoAngle = 210f;         // ↙
+            isoAngle = 180f + isoReferenceAngle;         // ↙
         else
-            isoAngle = 330f;         // ↘
+            isoAngle = 360f - isoReferenceAngle;         // ↘
 
         float rad = isoAngle * Mathf.Deg2Rad;
         return new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
