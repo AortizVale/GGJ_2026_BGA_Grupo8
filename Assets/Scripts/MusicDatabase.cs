@@ -14,6 +14,8 @@ public enum SFXType
 {
     Undefined,
     pasos,
+    interaccionCorrecta,
+    interaccionIncorrecta,
 }
 
 public enum MusicType

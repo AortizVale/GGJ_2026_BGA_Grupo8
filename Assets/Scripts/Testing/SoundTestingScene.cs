@@ -7,9 +7,12 @@ public class SoundTestingScene : MonoBehaviour
 
     [Header("SFX")]
     public SFXType sfxClip;
+    public SFXType sfxClip2;
 
     [Header("Music")]
     public MusicType musicClip;
+    public MusicType musicClip2;
+
 
     // ---------- UI ----------
     public void PlayUI()
@@ -25,11 +28,22 @@ public class SoundTestingScene : MonoBehaviour
         MusicManager.Instance.PlaySFX(sfxClip);
     }
 
+    public void PlaySFX2()
+    {
+        if (MusicManager.Instance == null) return;
+        MusicManager.Instance.PlaySFX(sfxClip2);
+    }
+
     // ---------- MUSIC ----------
     public void PlayMusic()
     {
         if (MusicManager.Instance == null) return;
         MusicManager.Instance.PlayMusic(musicClip);
+    }
+    public void PlayMusic2()
+    {
+        if (MusicManager.Instance == null) return;
+        MusicManager.Instance.PlayMusic(musicClip2);
     }
 
     public void StopMusic()

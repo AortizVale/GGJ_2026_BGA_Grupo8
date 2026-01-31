@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d77179d44a47cc4280fc3a2f503b47b, type: 3}
   m_Name: MusicDatabase
   m_EditorClassIdentifier: Assembly-CSharp::MusicDatabase
-  uiClips: []
-  sfxClips: []
-  musicClips:
+  uiClips:
+  - type: 1
+    clip: {fileID: 8300000, guid: 7a824c5c75f5c8541b79405359185fa6, type: 3}
+  - type: 2
+    clip: {fileID: 8300000, guid: 6e7db96cc9d9ae24c9aff1029af94037, type: 3}
   - type: 3
-    clip: {fileID: 8300000, guid: 980fcd5caee900c439bdd4460be44f45, type: 3}
+    clip: {fileID: 8300000, guid: 4a6523122942f594a9a1d243f1e97cbc, type: 3}
+  sfxClips:
+  - type: 2
+    clip: {fileID: 8300000, guid: 6619e08ed7e6d2549bd3e84f5d20c671, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: a024f2757d3e54f42989127e3cc1033e, type: 3}
+  musicClips:
+  - type: 1
+    clip: {fileID: 8300000, guid: ea026924c14920843b39c726bc6fcd40, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: 79fa562eed98b8c41a4d21025384f6bc, type: 3}
