@@ -78,6 +78,7 @@ public class PlayerCharacter: MonoBehaviour
         animator.SetFloat("HorizontalVelocity", lastMoveDirection.x);
         animator.SetFloat("VerticalVelocity", lastMoveDirection.y);
 
+        
         if (mustInteract)
         {
             mustInteract = false;
@@ -107,8 +108,16 @@ public class PlayerCharacter: MonoBehaviour
 
         rb2D.linearVelocity = direction * speed;
 
-        if (direction.sqrMagnitude > 0.01f)
+        bool isMoving = direction.sqrMagnitude > 0.01f;
+        if (isMoving)
+        {
             lastMoveDirection = direction;
+        }
+            
+        if (animator.GetBool("IsMoving") != isMoving)
+        {
+            animator.SetBool("IsMoving", isMoving);
+        }
     }
 
 
