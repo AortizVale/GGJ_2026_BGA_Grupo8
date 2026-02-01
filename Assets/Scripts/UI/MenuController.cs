@@ -1,22 +1,26 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
-    private CanvasGroup _canvasGroup;
+    [SerializeField] private InteractableWindow _menuContainer;
 
-    private const float FADE_ANIMATION_DURATION = 0.25f;
+    private InteractableWindow _currentActiveWindow;
 
     private void Start()
     {
-        _canvasGroup = GetComponent<CanvasGroup>();
+        _currentActiveWindow = _menuContainer;
     }
 
-    public void ToggleMenuContainer(bool active)
+    public void SwitchToWindow(InteractableWindow window)
     {
-        _canvasGroup.DOFade(active ? 1 : 0, FADE_ANIMATION_DURATION).OnComplete(()=>
+        if (window == _currentActiveWindow || window == null) return;
+        
+        _currentActiveWindow.ToggleWindow(false, () =>
         {
-
+            window.ToggleWindow(true);
+            _currentActiveWindow = window;  
         });
     }
 }
