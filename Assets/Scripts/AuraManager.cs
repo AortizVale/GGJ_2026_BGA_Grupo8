@@ -75,6 +75,10 @@ public class AuraManager : MonoBehaviour
         GameManager.PlayerCharacter.SetBodyAlpha(transparency);
         GameManager.PlayerCharacter.SetLightRadius(Mathf.Clamp(2-itemsRythm, 0.2f, 2f));
 
+        if (!MusicManager.Instance.IsHeartbeatPlayingByValue(transparency))
+        {
+            MusicManager.Instance.PlayHeartbeatByValue(1-transparency);
+        }
         if (currentTime <= 0f)
         {
             isCountdownRunning = false;
@@ -94,6 +98,7 @@ public class AuraManager : MonoBehaviour
     private void OnTimeEnded()
     {
         Debug.Log("Tiempo agotado");
+        MusicManager.Instance.PlayDeathHeartBeat();
         // Game Over, evento, lo que necesites
     }
 }

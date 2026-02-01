@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class BadAuraItem : InteractableBase
 {
-    [SerializeField] private float rythToIncrease = 0.2f;
+    [SerializeField] private float rythmToIncrease = 0.2f;
+    bool hasInteracted = false;
     public override void Interact()
     {
         base.Interact();
-        GameManager.AuraManager.IncreaseItemRythm(0.2f);
+
+        if (hasInteracted) { return; }
+
+        hasInteracted = true;
+
+        GameManager.AuraManager.IncreaseItemRythm(rythmToIncrease);
         if (MusicManager.Instance != null)
         {
             MusicManager.Instance.PlaySFX(SFXType.interaccionIncorrecta);
         }
-        Destroy(gameObject);
+        animator?.SetTrigger("Interact");
+        myCollider.enabled = false;
+        hideBehindPlayer?.ForceBackground();
     }
 }
