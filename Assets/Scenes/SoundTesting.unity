@@ -1885,10 +1885,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundTestingScene
   uiClip: 1
-  sfxClip: 2
-  sfxClip2: 3
-  musicClip: 3
-  musicClip2: 1
+  sfxClip: 1
+  sfxClip2: 7
+  musicClip: 7
+  musicClip2: 6
 --- !u!4 &1680772660
 Transform:
   m_ObjectHideFlags: 0

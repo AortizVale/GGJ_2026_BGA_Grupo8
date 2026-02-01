@@ -16,6 +16,10 @@ public enum SFXType
     pasos,
     interaccionCorrecta,
     interaccionIncorrecta,
+    Latido1,
+    Latido2,
+    Latido3,
+    LatidoConMuerte,
 }
 
 public enum MusicType
@@ -24,6 +28,10 @@ public enum MusicType
     MainMenu,
     MainGameplay,
     BackgroundMusic,
+	Ambiente1,
+	Ambiente2,
+    SountrackCalmaSinLatidos,
+    SountrackDarkCompleto,
 }
 
 
