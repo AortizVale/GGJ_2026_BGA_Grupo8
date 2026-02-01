@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerCharacter: MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerCharacter: MonoBehaviour
     [SerializeField] SpriteRenderer bodySpriteRenderer;
     [SerializeField] float linearSpeed = 1f;
     [SerializeField] Animator maskAnimator;
+    [SerializeField] Light2D auraLight;
     [Header("Interact data")]
     [SerializeField] float interactRadius = 0.3f;
     [SerializeField] float interactRange = 1f;
@@ -27,15 +29,7 @@ public class PlayerCharacter: MonoBehaviour
 
     public bool IsSprinting => isSprinting;
     public bool IsMoving => rawMove.sqrMagnitude > 0.01f;
-    public float CurrentSpeedMultiplier
-    {
-        get
-        {
-            if (!IsMoving) return 0.5f;        // quieto → tiempo más lento
-            if (IsSprinting) return 4f;      // corriendo → tiempo más rápido
-            return 1f;                         // caminando → normal
-        }
-    }
+
 
     private void OnEnable()
     {
@@ -187,6 +181,11 @@ public class PlayerCharacter: MonoBehaviour
         Color color = bodySpriteRenderer.color;
         color.a = Mathf.Clamp01(alpha); // 0 = invisible, 1 = totalmente visible
         bodySpriteRenderer.color = color;
+    }
+
+    public void SetLightRadius(float radius)
+    {
+        auraLight.pointLightOuterRadius = radius;
     }
 
     [SerializeField] float isoReferenceAngle = 30f;
