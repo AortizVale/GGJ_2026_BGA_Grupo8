@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BadAuraItem : InteractableBase
 {
+    /*
     [SerializeField] private float rythmToIncrease = 0.2f;
     bool hasInteracted = false;
     public override void Interact()
@@ -21,4 +22,5 @@ public class BadAuraItem : InteractableBase
         myCollider.enabled = false;
         hideBehindPlayer?.ForceBackground();
     }
+    */
 }

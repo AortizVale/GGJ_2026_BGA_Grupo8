@@ -86,15 +86,11 @@ public class AuraManager : MonoBehaviour
         }
     }
 
-    public void IncreaseItemRythm(float value)
+    public void AddItemRythm(float value)
     {
         itemsRythm = Mathf.Max(0, itemsRythm + value);
     }
 
-    public void DecreaseRythm(float value)
-    {
-        itemsRythm = Mathf.Max(0, itemsRythm - value);
-    }
     private void OnTimeEnded()
     {
         Debug.Log("Tiempo agotado");
