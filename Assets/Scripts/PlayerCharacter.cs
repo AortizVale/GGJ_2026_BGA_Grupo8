@@ -1,9 +1,8 @@
 ﻿using DG.Tweening;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.U2D;
+using UnityEngine.SceneManagement;
 
 public class PlayerCharacter: MonoBehaviour
 {
@@ -253,12 +252,9 @@ public class PlayerCharacter: MonoBehaviour
     private void FadeMaskAndShrinkLight(
     float targetHeightY,
     float moveHeightTime,
-
     float outerRadiusTarget,
     float outerRadiusTime,
-
     float spriteFadeTime,
-
     float innerShrinkTime,
     float finalOuterShrinkTime
 )
@@ -270,7 +266,6 @@ public class PlayerCharacter: MonoBehaviour
         // 0️⃣ Mover altura (posición Y)
         seq.Append(
             lightTransform.DOLocalMoveY(targetHeightY, moveHeightTime)
-
         );
 
         // 1️⃣ Baja radio externo (primer cierre)
@@ -305,7 +300,14 @@ public class PlayerCharacter: MonoBehaviour
                 finalOuterShrinkTime
             )
         );
+
+        // ✅ Cuando termina todo, cambia a la escena 0
+        seq.OnComplete(() =>
+        {
+            SceneManager.LoadScene(0);
+        });
     }
+
 
 
 }
