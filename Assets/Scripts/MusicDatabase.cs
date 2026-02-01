@@ -20,6 +20,8 @@ public enum SFXType
     Latido2,
     Latido3,
     LatidoConMuerte,
+    Latido3SinMuerte,
+    Latido3ConMuerte,
 }
 
 public enum MusicType
@@ -32,6 +34,8 @@ public enum MusicType
 	Ambiente2,
     SountrackCalmaSinLatidos,
     SountrackDarkCompleto,
+    SountrackFinal,
+
 }
 
 
