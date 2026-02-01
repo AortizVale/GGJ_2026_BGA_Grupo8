@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: f0c5aed4d9ee4d54d8c3de44c5801c3f
+guid: 8fcd65fbf3195c642afa257381000578
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 239231470218838867
-    second: dead_trees_0
+      213: 370177244621232431
+    second: trees-sheet (1)_0
   - first:
-      213: -365007515289808529
-    second: dead_trees_1
+      213: 6032873963165677654
+    second: trees-sheet (1)_1
   - first:
-      213: -7697880242507426355
-    second: dead_trees_2
+      213: 473498706218809768
+    second: trees-sheet (1)_2
   - first:
-      213: -5393885985699174204
-    second: dead_trees_3
+      213: -7845218113814136394
+    second: trees-sheet (1)_3
   - first:
-      213: -6039569134460434010
-    second: dead_trees_4
+      213: -3131963949271004132
+    second: trees-sheet (1)_4
   - first:
-      213: 2902145579698199300
-    second: dead_trees_5
+      213: -2831384256985630841
+    second: trees-sheet (1)_5
+  - first:
+      213: 5646249226327144647
+    second: trees-sheet (1)_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_trees_0
+      name: trees-sheet (1)_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 11
         y: 0
-        width: 26
-        height: 32
+        width: 42
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3530d7131cbe15300800000000000000
-      internalID: 239231470218838867
+      spriteID: f29d4912e32232500800000000000000
+      internalID: 370177244621232431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_1
+      name: trees-sheet (1)_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 73
         y: 0
-        width: 24
-        height: 32
+        width: 36
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f619dc6499b3feaf0800000000000000
-      internalID: -365007515289808529
+      spriteID: 658713de7e219b350800000000000000
+      internalID: 6032873963165677654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_2
+      name: trees-sheet (1)_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 143
         y: 0
-        width: 22
-        height: 32
+        width: 36
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc5d8dd54b2ab2590800000000000000
-      internalID: -7697880242507426355
+      spriteID: 8a977c98094329600800000000000000
+      internalID: 473498706218809768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_3
+      name: trees-sheet (1)_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 203
         y: 0
-        width: 17
-        height: 32
+        width: 42
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c8617726411525b0800000000000000
-      internalID: -5393885985699174204
+      spriteID: 6b9f5a4f0bf202390800000000000000
+      internalID: -7845218113814136394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_4
+      name: trees-sheet (1)_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 267
         y: 0
-        width: 24
-        height: 32
+        width: 40
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a982180fd32f2ca0800000000000000
-      internalID: -6039569134460434010
+      spriteID: c1c4f5ac1670984d0800000000000000
+      internalID: -3131963949271004132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_5
+      name: trees-sheet (1)_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 331
         y: 0
-        width: 26
-        height: 32
+        width: 42
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +256,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b916c470e764820800000000000000
-      internalID: 2902145579698199300
+      spriteID: 787fcb30507e4b8d0800000000000000
+      internalID: -2831384256985630841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trees-sheet (1)_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8bd8891c18b5e40800000000000000
+      internalID: 5646249226327144647
       vertices: []
       indices: 
       edges: []
@@ -273,12 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dead_trees_0: 239231470218838867
-      dead_trees_1: -365007515289808529
-      dead_trees_2: -7697880242507426355
-      dead_trees_3: -5393885985699174204
-      dead_trees_4: -6039569134460434010
-      dead_trees_5: 2902145579698199300
+      trees-sheet (1)_0: 370177244621232431
+      trees-sheet (1)_1: 6032873963165677654
+      trees-sheet (1)_2: 473498706218809768
+      trees-sheet (1)_3: -7845218113814136394
+      trees-sheet (1)_4: -3131963949271004132
+      trees-sheet (1)_5: -2831384256985630841
+      trees-sheet (1)_6: 5646249226327144647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

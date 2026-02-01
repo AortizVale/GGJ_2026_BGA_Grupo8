@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: f0c5aed4d9ee4d54d8c3de44c5801c3f
+guid: 78023b70c045e314598de0f6f35101be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 239231470218838867
-    second: dead_trees_0
+      213: 1186104683330328586
+    second: arbol_idle_0
   - first:
-      213: -365007515289808529
-    second: dead_trees_1
+      213: 2585137948385161597
+    second: arbol_idle_1
   - first:
-      213: -7697880242507426355
-    second: dead_trees_2
+      213: -4832890283025082802
+    second: arbol_idle_2
   - first:
-      213: -5393885985699174204
-    second: dead_trees_3
+      213: -5273358579237359365
+    second: arbol_idle_3
   - first:
-      213: -6039569134460434010
-    second: dead_trees_4
+      213: 5623768906701108631
+    second: arbol_idle_4
   - first:
-      213: 2902145579698199300
-    second: dead_trees_5
+      213: -5983542241298505466
+    second: arbol_idle_5
+  - first:
+      213: 9173607113455849208
+    second: arbol_idle_6
+  - first:
+      213: -1725384889312390431
+    second: arbol_idle_7
+  - first:
+      213: 2797156358692194617
+    second: arbol_idle_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_trees_0
+      name: arbol_idle_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 26
-        height: 32
+        width: 59
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3530d7131cbe15300800000000000000
-      internalID: 239231470218838867
+      spriteID: a08d45cdce3e57010800000000000000
+      internalID: 1186104683330328586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_1
+      name: arbol_idle_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 59
         y: 0
-        width: 24
-        height: 32
+        width: 59
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f619dc6499b3feaf0800000000000000
-      internalID: -365007515289808529
+      spriteID: d7131e4744140e320800000000000000
+      internalID: 2585137948385161597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_2
+      name: arbol_idle_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 118
         y: 0
-        width: 22
-        height: 32
+        width: 59
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc5d8dd54b2ab2590800000000000000
-      internalID: -7697880242507426355
+      spriteID: e465ad1b4ef1eecb0800000000000000
+      internalID: -4832890283025082802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_3
+      name: arbol_idle_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 177
         y: 0
-        width: 17
-        height: 32
+        width: 59
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c8617726411525b0800000000000000
-      internalID: -5393885985699174204
+      spriteID: bf07c47cf4441d6b0800000000000000
+      internalID: -5273358579237359365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_4
+      name: arbol_idle_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 236
         y: 0
-        width: 24
-        height: 32
+        width: 59
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a982180fd32f2ca0800000000000000
-      internalID: -6039569134460434010
+      spriteID: 7957ece4604ab0e40800000000000000
+      internalID: 5623768906701108631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_5
+      name: arbol_idle_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 295
         y: 0
-        width: 26
-        height: 32
+        width: 59
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +262,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b916c470e764820800000000000000
-      internalID: 2902145579698199300
+      spriteID: 601abd0a80036fca0800000000000000
+      internalID: -5983542241298505466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol_idle_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe488ad0133f4f70800000000000000
+      internalID: 9173607113455849208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol_idle_7
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e255bba5933e08e0800000000000000
+      internalID: -1725384889312390431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol_idle_8
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939c21563ee71d620800000000000000
+      internalID: 2797156358692194617
       vertices: []
       indices: 
       edges: []
@@ -273,12 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dead_trees_0: 239231470218838867
-      dead_trees_1: -365007515289808529
-      dead_trees_2: -7697880242507426355
-      dead_trees_3: -5393885985699174204
-      dead_trees_4: -6039569134460434010
-      dead_trees_5: 2902145579698199300
+      arbol_idle_0: 1186104683330328586
+      arbol_idle_1: 2585137948385161597
+      arbol_idle_2: -4832890283025082802
+      arbol_idle_3: -5273358579237359365
+      arbol_idle_4: 5623768906701108631
+      arbol_idle_5: -5983542241298505466
+      arbol_idle_6: 9173607113455849208
+      arbol_idle_7: -1725384889312390431
+      arbol_idle_8: 2797156358692194617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
