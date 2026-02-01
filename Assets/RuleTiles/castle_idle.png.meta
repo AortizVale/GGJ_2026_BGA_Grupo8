@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: f0c5aed4d9ee4d54d8c3de44c5801c3f
+guid: 17a0f5ce36573ae49b3aed6b41e2e885
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 239231470218838867
-    second: dead_trees_0
+      213: -1489628936614393322
+    second: castle_idle_0
   - first:
-      213: -365007515289808529
-    second: dead_trees_1
+      213: 2159695685530820600
+    second: castle_idle_1
   - first:
-      213: -7697880242507426355
-    second: dead_trees_2
+      213: 1064948162150590743
+    second: castle_idle_2
   - first:
-      213: -5393885985699174204
-    second: dead_trees_3
+      213: 1209091590233994323
+    second: castle_idle_3
   - first:
-      213: -6039569134460434010
-    second: dead_trees_4
+      213: 3864272973674982928
+    second: castle_idle_4
   - first:
-      213: 2902145579698199300
-    second: dead_trees_5
+      213: -708232906465199116
+    second: castle_idle_5
+  - first:
+      213: -230372582240341414
+    second: castle_idle_6
+  - first:
+      213: -8417892764754018884
+    second: castle_idle_7
+  - first:
+      213: -3120253266890772466
+    second: castle_idle_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,12 +137,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_trees_0
+      name: castle_idle_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 26
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3530d7131cbe15300800000000000000
-      internalID: 239231470218838867
+      spriteID: 61ac4f1ef56c35be0800000000000000
+      internalID: -1489628936614393322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_1
+      name: castle_idle_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 31
         y: 0
-        width: 24
-        height: 32
+        width: 33
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f619dc6499b3feaf0800000000000000
-      internalID: -365007515289808529
+      spriteID: 8ff120f88c7c8fd10800000000000000
+      internalID: 2159695685530820600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_2
+      name: castle_idle_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 63
         y: 0
-        width: 22
-        height: 32
+        width: 33
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc5d8dd54b2ab2590800000000000000
-      internalID: -7697880242507426355
+      spriteID: 719e03d06b477ce00800000000000000
+      internalID: 1064948162150590743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_3
+      name: castle_idle_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 95
         y: 0
-        width: 17
-        height: 32
+        width: 33
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c8617726411525b0800000000000000
-      internalID: -5393885985699174204
+      spriteID: 3543fc0356e87c010800000000000000
+      internalID: 1209091590233994323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_4
+      name: castle_idle_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 0
-        width: 24
-        height: 32
+        width: 33
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,19 +240,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a982180fd32f2ca0800000000000000
-      internalID: -6039569134460434010
+      spriteID: 01e2a07bbc7a0a530800000000000000
+      internalID: 3864272973674982928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_5
+      name: castle_idle_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 159
         y: 0
-        width: 26
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb36e78ce9db26f0800000000000000
+      internalID: -708232906465199116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castle_idle_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 33
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +284,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b916c470e764820800000000000000
-      internalID: 2902145579698199300
+      spriteID: a5233956b5d8dccf0800000000000000
+      internalID: -230372582240341414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castle_idle_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd718f5123ad2b80800000000000000
+      internalID: -8417892764754018884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castle_idle_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0039b18f22a2b4d0800000000000000
+      internalID: -3120253266890772466
       vertices: []
       indices: 
       edges: []
@@ -273,12 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dead_trees_0: 239231470218838867
-      dead_trees_1: -365007515289808529
-      dead_trees_2: -7697880242507426355
-      dead_trees_3: -5393885985699174204
-      dead_trees_4: -6039569134460434010
-      dead_trees_5: 2902145579698199300
+      castle_idle_0: -1489628936614393322
+      castle_idle_1: 2159695685530820600
+      castle_idle_2: 1064948162150590743
+      castle_idle_3: 1209091590233994323
+      castle_idle_4: 3864272973674982928
+      castle_idle_5: -708232906465199116
+      castle_idle_6: -230372582240341414
+      castle_idle_7: -8417892764754018884
+      castle_idle_8: -3120253266890772466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

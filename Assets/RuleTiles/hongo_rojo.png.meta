@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: f0c5aed4d9ee4d54d8c3de44c5801c3f
+guid: 93d9da446d5d24a409664421e5fc0785
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 239231470218838867
-    second: dead_trees_0
+      213: 8051335479042987512
+    second: hongo_rojo_0
   - first:
-      213: -365007515289808529
-    second: dead_trees_1
+      213: 4212092594393377547
+    second: hongo_rojo_1
   - first:
-      213: -7697880242507426355
-    second: dead_trees_2
+      213: 1858362802660872592
+    second: hongo_rojo_2
   - first:
-      213: -5393885985699174204
-    second: dead_trees_3
+      213: 3781315691364446259
+    second: hongo_rojo_3
   - first:
-      213: -6039569134460434010
-    second: dead_trees_4
+      213: 8347734805600034920
+    second: hongo_rojo_4
   - first:
-      213: 2902145579698199300
-    second: dead_trees_5
+      213: 1325088654986559290
+    second: hongo_rojo_5
+  - first:
+      213: 2743994136909257664
+    second: hongo_rojo_6
+  - first:
+      213: 8730300773268098723
+    second: hongo_rojo_7
+  - first:
+      213: 7104808074963629146
+    second: hongo_rojo_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_trees_0
+      name: hongo_rojo_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 26
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3530d7131cbe15300800000000000000
-      internalID: 239231470218838867
+      spriteID: 8f55bdbd5f61cbf60800000000000000
+      internalID: 8051335479042987512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_1
+      name: hongo_rojo_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 16
         y: 0
-        width: 24
-        height: 32
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f619dc6499b3feaf0800000000000000
-      internalID: -365007515289808529
+      spriteID: b0beed1e5eb547a30800000000000000
+      internalID: 4212092594393377547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_2
+      name: hongo_rojo_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 32
         y: 0
-        width: 22
-        height: 32
+        width: 16
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc5d8dd54b2ab2590800000000000000
-      internalID: -7697880242507426355
+      spriteID: 091966c7f1b3ac910800000000000000
+      internalID: 1858362802660872592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_3
+      name: hongo_rojo_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 48
         y: 0
-        width: 17
-        height: 32
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +218,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c8617726411525b0800000000000000
-      internalID: -5393885985699174204
+      spriteID: 3307367469ee97430800000000000000
+      internalID: 3781315691364446259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_trees_4
+      name: hongo_rojo_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86064f6d39c19d370800000000000000
+      internalID: 8347734805600034920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hongo_rojo_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fbf507c19a36210800000000000000
+      internalID: 1325088654986559290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hongo_rojo_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb1b341120a41620800000000000000
+      internalID: 2743994136909257664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hongo_rojo_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae86f45c42482970800000000000000
+      internalID: 8730300773268098723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hongo_rojo_8
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 24
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,30 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a982180fd32f2ca0800000000000000
-      internalID: -6039569134460434010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dead_trees_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40b916c470e764820800000000000000
-      internalID: 2902145579698199300
+      spriteID: a54b8812d49599260800000000000000
+      internalID: 7104808074963629146
       vertices: []
       indices: 
       edges: []
@@ -273,12 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dead_trees_0: 239231470218838867
-      dead_trees_1: -365007515289808529
-      dead_trees_2: -7697880242507426355
-      dead_trees_3: -5393885985699174204
-      dead_trees_4: -6039569134460434010
-      dead_trees_5: 2902145579698199300
+      hongo_rojo_0: 8051335479042987512
+      hongo_rojo_1: 4212092594393377547
+      hongo_rojo_2: 1858362802660872592
+      hongo_rojo_3: 3781315691364446259
+      hongo_rojo_4: 8347734805600034920
+      hongo_rojo_5: 1325088654986559290
+      hongo_rojo_6: 2743994136909257664
+      hongo_rojo_7: 8730300773268098723
+      hongo_rojo_8: 7104808074963629146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
