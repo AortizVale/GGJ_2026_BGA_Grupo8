@@ -32,6 +32,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c5d7e350df74d1a48baac2b18aabbd9d, type: 3}
   - type: 7
     clip: {fileID: 8300000, guid: e40d3bcb9c695a7498524e88c6c292a9, type: 3}
+  - type: 9
+    clip: {fileID: 8300000, guid: 5af0fd09174f68b4eb3ee57625ac848e, type: 3}
+  - type: 8
+    clip: {fileID: 8300000, guid: ab0ce3a630087364fbc31e2e71f93b8a, type: 3}
   musicClips:
   - type: 1
     clip: {fileID: 8300000, guid: ea026924c14920843b39c726bc6fcd40, type: 3}
@@ -45,3 +49,5 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 20ff89780aa51f2498a2e43101854b84, type: 3}
   - type: 7
     clip: {fileID: 8300000, guid: 7508bb9a86a525341ac03fa9b6607871, type: 3}
+  - type: 8
+    clip: {fileID: 8300000, guid: 4f8450348fecba742b5028d31ff154b5, type: 3}
