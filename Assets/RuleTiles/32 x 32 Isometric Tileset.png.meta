@@ -1,5 +1,13 @@
 fileFormatVersion: 2
 guid: 36b7d17f20c42604bb06754728055d91
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320546
+  packageName: 32x32 Isometric Tileset Pack KyleD
+  packageVersion: 1.0
+  assetPath: Assets/32x32 Isometric Tileset Pack KyleD/Textures/32 x 32 Isometric
+    Tileset.png
+  uploadId: 819200
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -1976,11 +1984,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 320546
-  packageName: 32x32 Isometric Tileset Pack KyleD
-  packageVersion: 1.0
-  assetPath: Assets/32x32 Isometric Tileset Pack KyleD/Textures/32 x 32 Isometric
-    Tileset.png
-  uploadId: 819200
