@@ -329,8 +329,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.054855183}
-  m_Size: {x: 0.07, y: 0.22}
+  m_Offset: {x: 0, y: -0.11552888}
+  m_Size: {x: 0.07, y: 0.07}
   m_Direction: 0
 --- !u!114 &4696767326293863411
 MonoBehaviour:
@@ -351,6 +351,7 @@ MonoBehaviour:
   bodySpriteRenderer: {fileID: 2834913028662162549}
   linearSpeed: 1
   maskAnimator: {fileID: 4377053337836885550}
+  maskSpriteRenderer: {fileID: 6523744383042915617}
   auraLight: {fileID: 1769430392850509045}
   interactRadius: 0.15
   interactRange: 0.2

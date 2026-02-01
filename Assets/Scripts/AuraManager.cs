@@ -99,6 +99,7 @@ public class AuraManager : MonoBehaviour
     {
         Debug.Log("Tiempo agotado");
         MusicManager.Instance.PlayDeathHeartBeat();
+        GameManager.PlayerCharacter.OnDeath();
         // Game Over, evento, lo que necesites
     }
 }

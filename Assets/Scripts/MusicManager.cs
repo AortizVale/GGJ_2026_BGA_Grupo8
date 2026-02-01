@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 using DG.Tweening;
@@ -119,12 +119,15 @@ public class MusicManager : MonoBehaviour
         if (clip == null)
             return;
 
-        if (currentHeartbeat == SFXType.LatidoConMuerte)
+        SFXType deathHeartbeat = SFXType.Latido3ConMuerte;
+        if (currentHeartbeat == deathHeartbeat)
             return;
 
-        currentHeartbeat = SFXType.LatidoConMuerte;
+        currentHeartbeat = deathHeartbeat;
 
         heartbeatTween?.Kill();
+
+        float startTime = 9f; // ⏱️ segundo desde el que quieres iniciar el sonido
 
         heartbeatTween = DOTween.Sequence()
             .Append(heartBeatAudioSource.DOFade(0.5f, heartbeatFadeTime))
@@ -132,10 +135,15 @@ public class MusicManager : MonoBehaviour
             {
                 heartBeatAudioSource.clip = clip;
                 heartBeatAudioSource.loop = false;
+
+                // Clamp por seguridad
+                heartBeatAudioSource.time = Mathf.Clamp(startTime, 0f, clip.length - 0.01f);
+
                 heartBeatAudioSource.Play();
             })
             .Append(heartBeatAudioSource.DOFade(1f, heartbeatFadeTime));
     }
+
 
 
 }
