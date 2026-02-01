@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,10 +8,10 @@ using UnityEngine.UI;
 public class MenuButton : MonoBehaviour
 {
     [SerializeField]
-    protected CanvasGroup _interactableWindow;
+    protected InteractableWindow _interactableWindow;
 
-    protected MenuController _menuController;
-    protected Button _button;
+    private MenuController _menuController;
+    private Button _button;
 
     private void Awake()
     {
@@ -18,14 +19,20 @@ public class MenuButton : MonoBehaviour
         _menuController = GetComponentInParent<MenuController>();
     }
 
-    protected virtual void ActivateButton()
+    public virtual void OpenInteractableWindow()
     {
-        if (_interactableWindow)
-        {
-            //_interactableWindow.DOFade(1, );
-            if (_menuController)
-                _menuController.ToggleMenuContainer(false);
-        }
+        if (!_interactableWindow) return;
+        _menuController.SwitchToWindow(_interactableWindow);
+    }
+
+    public void SwitchToScene(string sceneName)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
 }
