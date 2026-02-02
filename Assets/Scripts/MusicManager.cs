@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-using DG.Tweening;
-
 
 public class MusicManager : MonoBehaviour
 {
@@ -18,9 +16,8 @@ public class MusicManager : MonoBehaviour
     [SerializeField] private AudioSource heartBeatAudioSource;
     [Header("Heartbeat")]
     [SerializeField] private float heartbeatFadeTime = 0.25f;
-    private Tween heartbeatTween;
     private List<SFXType> heartbeatSfxList = new List<SFXType> { SFXType.Latido1, SFXType.Latido2, SFXType.Latido3};
-    private SFXType currentHeartbeat;
+    private SFXType currentHeartbeat = SFXType.Undefined;
 
 
     private void Awake()
@@ -32,7 +29,6 @@ public class MusicManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayUI(UIClipType type)
@@ -99,18 +95,10 @@ public class MusicManager : MonoBehaviour
 
         currentHeartbeat = sfxType;
 
-        //  Detener tween anterior
-        heartbeatTween?.Kill();
+        heartBeatAudioSource.clip = clip;
+        heartBeatAudioSource.loop = true;
+        heartBeatAudioSource.Play();
 
-        heartbeatTween = DOTween.Sequence()
-            .Append(heartBeatAudioSource.DOFade(0.5f, heartbeatFadeTime))
-            .AppendCallback(() =>
-            {
-                heartBeatAudioSource.clip = clip;
-                heartBeatAudioSource.loop = true;
-                heartBeatAudioSource.Play();
-            })
-            .Append(heartBeatAudioSource.DOFade(1f, heartbeatFadeTime));
     }
 
     public void PlayDeathHeartBeat()
@@ -125,23 +113,16 @@ public class MusicManager : MonoBehaviour
 
         currentHeartbeat = deathHeartbeat;
 
-        heartbeatTween?.Kill();
-
         float startTime = 9f; // ⏱️ segundo desde el que quieres iniciar el sonido
 
-        heartbeatTween = DOTween.Sequence()
-            .Append(heartBeatAudioSource.DOFade(0.5f, heartbeatFadeTime))
-            .AppendCallback(() =>
-            {
-                heartBeatAudioSource.clip = clip;
-                heartBeatAudioSource.loop = false;
+        heartBeatAudioSource.clip = clip;
+        heartBeatAudioSource.loop = false;
 
-                // Clamp por seguridad
-                heartBeatAudioSource.time = Mathf.Clamp(startTime, 0f, clip.length - 0.01f);
+        // Clamp por seguridad
+        heartBeatAudioSource.time = Mathf.Clamp(startTime, 0f, clip.length - 0.01f);
 
-                heartBeatAudioSource.Play();
-            })
-            .Append(heartBeatAudioSource.DOFade(1f, heartbeatFadeTime));
+        heartBeatAudioSource.Play();
+
     }
 
 

@@ -68,6 +68,7 @@ public class AuraManager : MonoBehaviour
         }
 
         currentTime -= Time.deltaTime * Rythm;
+        GameManager.CalmCanvas.UpdateTime((int)currentTime);
         currentTime = Mathf.Max(currentTime, 0f);
 
         transparency = Mathf.Clamp01(currentTime /initialTime);
@@ -94,8 +95,14 @@ public class AuraManager : MonoBehaviour
     private void OnTimeEnded()
     {
         Debug.Log("Tiempo agotado");
+        MusicManager.Instance.StopMusic();
         MusicManager.Instance.PlayDeathHeartBeat();
         GameManager.PlayerCharacter.OnDeath();
         // Game Over, evento, lo que necesites
+    }
+
+    public void Win()
+    {
+        isCountdownRunning = false;
     }
 }

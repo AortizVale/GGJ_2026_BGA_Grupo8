@@ -4,13 +4,13 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
-public class PlayerCharacter: MonoBehaviour
+public class PlayerCharacter : MonoBehaviour
 {
 
     [SerializeField] InputActionReference move;
-    [SerializeField] InputActionReference interact; 
+    [SerializeField] InputActionReference interact;
     [SerializeField] InputActionReference sprint;
-    
+
     bool isSprinting;
     [SerializeField] float sprintMultiplier = 1.5f;
     [SerializeField] SpriteRenderer bodySpriteRenderer;
@@ -75,7 +75,7 @@ public class PlayerCharacter: MonoBehaviour
 
     protected virtual void Update()
     {
-              
+
         animator.SetFloat("HorizontalVelocity", lastMoveDirection.x);
         animator.SetFloat("VerticalVelocity", lastMoveDirection.y);
 
@@ -138,7 +138,7 @@ public class PlayerCharacter: MonoBehaviour
     private void PerformInteraction()
     {
         if (!inputsEnabled) { return; }
-        RaycastHit2D[] hits =  Physics2D.CircleCastAll(
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(
         transform.position,
         interactRadius,
         interactDirection,
@@ -146,7 +146,7 @@ public class PlayerCharacter: MonoBehaviour
 
         foreach (RaycastHit2D hit in hits)
         {
-            
+
             if (hit.collider.gameObject != this.gameObject)
             {
                 InteractableBase otherInteractableBase = hit.collider.GetComponent<InteractableBase>();
@@ -185,7 +185,7 @@ public class PlayerCharacter: MonoBehaviour
 
     }
 
-    public void SetBodyAlpha(float alpha) 
+    public void SetBodyAlpha(float alpha)
     {
         Color color = bodySpriteRenderer.color;
         color.a = Mathf.Clamp01(alpha); // 0 = invisible, 1 = totalmente visible
@@ -301,13 +301,21 @@ public class PlayerCharacter: MonoBehaviour
             )
         );
 
-        // ✅ Cuando termina todo, cambia a la escena 0
         seq.OnComplete(() =>
         {
-            SceneManager.LoadScene(0);
+            if (GameManager.CalmCanvas != null)
+            {
+                GameManager.CalmCanvas.OpenGameOver();
+                MusicManager.Instance.PlayMusic(MusicType.SountrackFinal);
+            }
         });
     }
 
+    public void OnWin()
+    {
+        inputsEnabled = false;
+        rb2D.linearVelocity = Vector2.zero;
 
 
+    }
 }
